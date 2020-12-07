@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>City of Edinburgh History</title>
+	<link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet" />
+	<style>
+		body {
+			padding-top: 50px;
+		}
+	</style>
+</head>
+<body style="background-color:#ccc9c9;">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collpased" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">City of Edinburgh History</a>
+	</div>
+	<div id="navbar" class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li class="active"><a href="/secret/">Home</a></li>
+			<li><a href="/secret/castle1/">Edinburgh Castle</a></li>
+			<li><a href="/secret/stmary1/">St Mary's Cathedral</a></li>
+			<li><a href="/secret/spire1/">The Scott Monument</a></li>
+			<li><a href="/secret/balmoral1/">The Balmoral Hotel Clock Tower</a></li>
+		</ul>
+	</div>
+	</div>
+	</nav>
+			
+<div class="container">
+	<h1><center>HISTORY OF THE CITY OF EDINBURGH<center></h1>
+	<h2><center>Please select the point of interest that you would like to explore from the top bar</center></h2>
+</div>
+<div class="container">
+	<img src="/static/img/skyline-720.jpg">
+
+
+<script src ="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src ="{{ url_for('static', filename='js/bootstrap.min.js')}}"></script>
+</body>
+</html>
